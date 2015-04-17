@@ -97,7 +97,9 @@ RUN pip install rpy2
 RUN pip install vincent
 
 #TA-LIB ( added 4-17-2015 compwizdave )
-RUN easy_install TA-Lib
+# RUN easy_install TA-Lib - no workie
+# http://downloads.sourceforge.net/project/ta-lib/ta-lib/0.4.0/ta-lib-0.4.0.jar?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fta-lib%2F&ts=1429296729&use_mirror=iweb
+# Comment out for now...need to manually install to get steps that work.
 
 # 4-17-2015 Need JSONSCHEMA 
 RUN pip install JSONSCHEMA
