@@ -5,4 +5,4 @@
 cd /ipython
 
 exec 2>&1
-exec /usr/local/bin/ipython notebook --profile=nbserver --pylab inline
+exec /usr/local/bin/ipython notebook --profile=nbserver
