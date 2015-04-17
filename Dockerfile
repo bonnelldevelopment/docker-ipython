@@ -99,11 +99,12 @@ RUN pip install vincent
 #TA-LIB ( added 4-17-2015 compwizdave )
 RUN easy_install TA-Lib
 
+# 4-17-2015 Need JSONSCHEMA 
+RUN pip install JSONSCHEMA
+
 #Add runit services
 ADD sv /etc/service 
 
-# 4-17-2015 
-# Need JSONSCHEMA and --pylab inline removed to support current packages
-RUN pip install JSONSCHEMA
-RUN sed -i "s/--pylab inline//" /etc/service/ipython/run
+
+
 
