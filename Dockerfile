@@ -96,5 +96,8 @@ RUN pip install rpy2
 #Vincent
 RUN pip install vincent
 
+#TA-LIB ( added 4-17-2015 compwizdave )
+RUN easy_install TA-Lib
+
 #Add runit services
 ADD sv /etc/service 
