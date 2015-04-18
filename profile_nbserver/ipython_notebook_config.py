@@ -99,7 +99,9 @@ c.NotebookApp.open_browser = False
 #   from IPython.lib import passwd; passwd()
 # 
 # The string should be of the form type:salt:hashed-password.
-# c.NotebookApp.password = u''
+# Use from IPython.lib import passwd; passwd() to generate password in ipython
+
+c.NotebookApp.password = u'sha1:ec265f3ac15b:5611a06bc100e158579be51b1150b29ee15c13ef''
 
 # The Logging format template
 # c.NotebookApp.log_format = '[%(name)s]%(highlevel)s %(message)s'
