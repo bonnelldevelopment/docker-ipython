@@ -4,5 +4,9 @@
 
 cd /ipython
 
+# Note: 
+# cd /ipython/profile_nbserver; openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mycert.pem -out mycert.pem'
+# to generate self signed SSLcert.
+
 exec 2>&1
-exec /usr/local/bin/ipython notebook --profile=nbserver
+exec /usr/local/bin/ipython notebook --profile=nbserver --certfile=/ipython/profile_nbserver/mycert.pem
